@@ -28,6 +28,5 @@ E:\MIRAE ASSET\Code\Web\MAFC\Prj.Web\bin\System.Web.Webpages.Deployment.xml
 E:\MIRAE ASSET\Code\Web\MAFC\Prj.Web\bin\System.Web.Webpages.Razor.xml
 E:\MIRAE ASSET\Code\Web\MAFC\Prj.Web\bin\System.Web.Helpers.xml
 E:\MIRAE ASSET\Code\Web\MAFC\Prj.Web\bin\System.Web.Mvc.xml
-E:\MIRAE ASSET\Code\Web\MAFC\Prj.Web\obj\Debug\Prj.Web.csprojResolveAssemblyReference.cache
 E:\MIRAE ASSET\Code\Web\MAFC\Prj.Web\obj\Debug\Prj.Web.dll
 E:\MIRAE ASSET\Code\Web\MAFC\Prj.Web\obj\Debug\Prj.Web.pdb
