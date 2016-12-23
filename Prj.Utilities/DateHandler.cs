@@ -226,12 +226,12 @@ namespace Prj.Utilities
 
         #region Days
 
-        public static DateTime UtcNow()
+        public static DateTime UtcNow() // ngày chuẩn thế giới
         {
             return DateTime.UtcNow;
         }
 
-        public static DateTime Now()
+        public static DateTime Now() // show ra web nếu là server ở việt nam thì add thêm 7h
         {
             var currentCulture = CultureInfo.CurrentCulture.Name;
             switch (currentCulture)
@@ -243,7 +243,7 @@ namespace Prj.Utilities
             }
         }
         
-        public static DateTime GetDate(DateTime date)
+        public static DateTime GetDate(DateTime date) // định dạng ngày nếu là vn thì add thêm 7h
         {
             var currentCulture = CultureInfo.CurrentCulture.Name;
             switch (currentCulture)
@@ -255,7 +255,7 @@ namespace Prj.Utilities
             }
         }
 
-        public static DateTime SetDate(DateTime date)
+        public static DateTime SetDate(DateTime date) // khi save ngày thì cần phải Set ngày hiện tại nếu là vn thì - 7h
         {
             var currentCulture = CultureInfo.CurrentCulture.Name;
             switch (currentCulture)

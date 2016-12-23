@@ -30,4 +30,6 @@ E:\MIRAE ASSET\Code\Web\MAFC\Prj.Web\bin\System.Web.Helpers.xml
 E:\MIRAE ASSET\Code\Web\MAFC\Prj.Web\bin\System.Web.Mvc.xml
 E:\MIRAE ASSET\Code\Web\MAFC\Prj.Web\obj\Debug\Prj.Web.dll
 E:\MIRAE ASSET\Code\Web\MAFC\Prj.Web\obj\Debug\Prj.Web.pdb
+E:\MIRAE ASSET\Code\Web\MAFC\Prj.Web\bin\Ninject.dll
+E:\MIRAE ASSET\Code\Web\MAFC\Prj.Web\bin\Ninject.xml
 E:\MIRAE ASSET\Code\Web\MAFC\Prj.Web\obj\Debug\Prj.Web.csprojResolveAssemblyReference.cache
