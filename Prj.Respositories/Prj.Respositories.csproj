@@ -45,16 +45,15 @@
     <Compile Include="Entity\DepartmentEntity.cs" />
     <Compile Include="Entity\MessageEntity.cs" />
     <Compile Include="Framework\PetaPoco.cs" />
+    <Compile Include="Implementations\TestRespository.cs" />
+    <Compile Include="Interfaces\ITestRespository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UnitOfWork\IUnitOfWork.cs" />
     <Compile Include="UnitOfWork\IUnitOfWorkProvider.cs" />
     <Compile Include="UnitOfWork\UnitOfWork.cs" />
     <Compile Include="UnitOfWork\UnitOfWorkProvider.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Implementations\" />
-    <Folder Include="Interfaces\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -1,0 +1,30 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Prj.Respositories.Models
+{
+   public class CommonModel
+    {
+
+    }
+
+    public abstract class LogsDateModel
+    {
+        public DateTime CreatedDate { get; set; }
+        public DateTime ModifiedDate { get; set; }
+        public string CreatedBy { get; set; }
+        public string ModifiedBy { get; set; }
+    }
+    public abstract class InfoPageModel
+    {
+        public int Count { get; set; }
+        public long PageIndex { get; set; }
+        public long PageSize { get; set; }
+        public long PageTotal { get; set; }
+        public string StartDate { get; set; }
+        public string EndDate { get; set; }
+    }
+}

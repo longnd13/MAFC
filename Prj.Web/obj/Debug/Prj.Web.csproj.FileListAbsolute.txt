@@ -33,3 +33,13 @@ E:\MIRAE ASSET\Code\Web\MAFC\Prj.Web\obj\Debug\Prj.Web.pdb
 E:\MIRAE ASSET\Code\Web\MAFC\Prj.Web\bin\Ninject.dll
 E:\MIRAE ASSET\Code\Web\MAFC\Prj.Web\bin\Ninject.xml
 E:\MIRAE ASSET\Code\Web\MAFC\Prj.Web\obj\Debug\Prj.Web.csprojResolveAssemblyReference.cache
+E:\MIRAE ASSET\Code\Web\MAFC\Prj.Web\bin\Prj.BusinessLogic.dll
+E:\MIRAE ASSET\Code\Web\MAFC\Prj.Web\bin\Prj.Utilities.dll
+E:\MIRAE ASSET\Code\Web\MAFC\Prj.Web\bin\AutoMapper.dll
+E:\MIRAE ASSET\Code\Web\MAFC\Prj.Web\bin\Prj.Respositories.dll
+E:\MIRAE ASSET\Code\Web\MAFC\Prj.Web\bin\Newtonsoft.Json.dll
+E:\MIRAE ASSET\Code\Web\MAFC\Prj.Web\bin\Prj.BusinessLogic.pdb
+E:\MIRAE ASSET\Code\Web\MAFC\Prj.Web\bin\Prj.Utilities.pdb
+E:\MIRAE ASSET\Code\Web\MAFC\Prj.Web\bin\AutoMapper.xml
+E:\MIRAE ASSET\Code\Web\MAFC\Prj.Web\bin\Prj.Respositories.pdb
+E:\MIRAE ASSET\Code\Web\MAFC\Prj.Web\bin\Newtonsoft.Json.xml

@@ -49,10 +49,29 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="Implementations\TestService.cs" />
+    <Compile Include="Interfaces\ITestService.cs" />
+    <Compile Include="MapperConfig\AutoMapperConfig.cs" />
+    <Compile Include="Models\CommonModel.cs" />
+    <Compile Include="Models\DepartmentModel.cs" />
+    <Compile Include="Models\MessageModel.cs" />
+    <Compile Include="ModuleConfig\RepositoriesModule.cs" />
+    <Compile Include="ModuleConfig\ServicesModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Prj.Respositories\Prj.Respositories.csproj">
+      <Project>{be2ba549-c376-4900-9909-ee5c164ee742}</Project>
+      <Name>Prj.Respositories</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Prj.Utilities\Prj.Utilities.csproj">
+      <Project>{34210b36-6290-4dd8-aa76-ff34c35f942e}</Project>
+      <Name>Prj.Utilities</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
