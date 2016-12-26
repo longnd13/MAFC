@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Prj.Respositories.Models
+namespace Prj.BusinessLogic.Models
 
 {
 

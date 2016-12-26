@@ -1,10 +1,11 @@
-﻿using System;
+﻿using Prj.Utilities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Prj.Respositories.Models
+namespace Prj.BusinessLogic.Models
 {
    public class CommonModel
     {
@@ -13,12 +14,14 @@ namespace Prj.Respositories.Models
 
     public abstract class LogsDateModel
     {
-        public DateTime CreatedDate { get; set; }
-        public DateTime ModifiedDate { get; set; }
+        private DateTime SetCreatedDate = DateHandler.UtcNow();
+        private DateTime SetModifiedDate = DateHandler.UtcNow();
+        public DateTime CreatedDate { get { return this.SetCreatedDate; } set { this.SetCreatedDate = DateHandler.UtcNow(); } }
+        public DateTime ModifiedDate { get { return this.SetModifiedDate; } set { this.SetModifiedDate = DateHandler.UtcNow(); } }
         public string CreatedBy { get; set; }
         public string ModifiedBy { get; set; }
     }
-    public abstract class InfoPageModel
+    public class InfoPageModel
     {
         public int Count { get; set; }
         public long PageIndex { get; set; }

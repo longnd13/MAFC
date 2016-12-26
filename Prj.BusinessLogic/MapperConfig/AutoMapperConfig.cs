@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
+using Prj.BusinessLogic.Models;
 using Prj.Respositories.Entity;
-using Prj.Respositories.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,9 +21,16 @@ namespace Prj.BusinessLogic.MapperConfig
                 cfg.CreateMap<MessageEntity, MessageModel>();
                 cfg.CreateMap<MessageModel, MessageEntity>();
 
-             
+                // Mapper Branch
+                cfg.CreateMap<BranchEntity, BranchModel>();
+                cfg.CreateMap<BranchModel, BranchEntity>();
+                cfg.CreateMap<BranchListEntity, BranchListModel>();
+                cfg.CreateMap<BranchListModel, BranchListEntity>();
 
 
+                cfg.CreateMap<DepartmentEntity, DepartmentModel>();
+                cfg.CreateMap<DepartmentModel, DepartmentEntity>();
+                
             });
         }
     }

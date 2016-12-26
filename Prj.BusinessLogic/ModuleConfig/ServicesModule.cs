@@ -14,7 +14,8 @@ namespace Prj.BusinessLogic.ModuleConfig
         public override void Load()
         {
             Bind<ITestService>().To<TestService>();
-         
+            Bind<IBranchService>().To<BranchService>();
+
         }
     }
 }

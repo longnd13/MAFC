@@ -49,9 +49,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="Implementations\BranchService.cs" />
     <Compile Include="Implementations\TestService.cs" />
+    <Compile Include="Interfaces\IBranchService.cs" />
     <Compile Include="Interfaces\ITestService.cs" />
     <Compile Include="MapperConfig\AutoMapperConfig.cs" />
+    <Compile Include="Models\BranchModel.cs" />
     <Compile Include="Models\CommonModel.cs" />
     <Compile Include="Models\DepartmentModel.cs" />
     <Compile Include="Models\MessageModel.cs" />

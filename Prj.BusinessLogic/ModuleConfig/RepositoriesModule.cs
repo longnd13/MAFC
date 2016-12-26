@@ -18,6 +18,7 @@ namespace Prj.BusinessLogic.ModuleConfig
             Bind<IUnitOfWorkProvider>().To<UnitOfWorkProvider>();
 
             Bind<ITestRespository>().To<TestRespository>();
+            Bind<IBranchRepository>().To<BranchRepository>();
 
 
         }
