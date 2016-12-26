@@ -124,6 +124,21 @@ namespace Prj.BusinessLogic.Implementations
             return msg;
         }
 
+        public List<BranchModel> GetBranch(bool bActived)
+        {
+            var list = new List<BranchModel>();
+            try
+            {
+                var data = _branchRepository.GetBranch(bActived);
+                list = Mapper.Map<List<BranchEntity>, List<BranchModel>>(data);
+            }
+            catch (Exception ex)
+            {
+                Logger.ErrorLog(ConstantsHandler.ForderLogName.ServiceBranch, "GetBranch : ", ex.ToString());
+            }
+            return list;
+        }
+
         private MessageModel ValidateBranch(BranchModel model)
         {
             var msg = new MessageModel();

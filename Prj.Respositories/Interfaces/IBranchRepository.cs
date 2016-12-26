@@ -14,5 +14,6 @@ namespace Prj.Respositories.Interfaces
         bool Delete(int id);
         MessageEntity Create(BranchEntity entity);
         MessageEntity Update(BranchEntity entity);
+        List<BranchEntity> GetBranch(bool bActived);
     }
 }

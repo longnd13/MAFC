@@ -19,7 +19,8 @@ namespace Prj.BusinessLogic.ModuleConfig
 
             Bind<ITestRespository>().To<TestRespository>();
             Bind<IBranchRepository>().To<BranchRepository>();
-
+            Bind<IAccountRepository>().To<AccountRepository>();
+            Bind<IDepartmentRepository>().To<DepartmentRepository>();
 
         }
     }

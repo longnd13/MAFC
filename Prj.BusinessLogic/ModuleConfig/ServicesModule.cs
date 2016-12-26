@@ -15,6 +15,8 @@ namespace Prj.BusinessLogic.ModuleConfig
         {
             Bind<ITestService>().To<TestService>();
             Bind<IBranchService>().To<BranchService>();
+            Bind<IAccountService>().To<AccountService>();
+            Bind<IDepartmentService>().To<DepartmentService>();
 
         }
     }

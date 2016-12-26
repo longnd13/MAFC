@@ -14,5 +14,7 @@ namespace Prj.BusinessLogic.Interfaces
         bool Delete(int id);
         MessageModel Create(BranchModel model);
         MessageModel Update(BranchModel model);
+        List<BranchModel> GetBranch(bool bActived);
+     
     }
 }

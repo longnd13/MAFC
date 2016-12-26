@@ -32,10 +32,21 @@ namespace Prj.Utilities
 
         public class ForderLogName
         {
+            // Branch
             public static string RepoBranch = "RepoBranch";
             public static string ServiceBranch = "ServiceBranch";
             public static string WebBranch = "WebBranch";
 
+            // Account
+            public static string RepoAccount = "RepoAccount";
+            public static string ServiceAccount = "ServiceAccount";
+            public static string WebAccount = "WebAccount";
+          
+
+            // Department
+            public static string RepoDepartment = "RepoDepartment";
+            public static string ServiceDepartment = "ServiceDepartment";
+            public static string WebDepartment  = "WebDepartment";
         }
     }
 }

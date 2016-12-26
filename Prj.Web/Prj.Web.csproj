@@ -94,6 +94,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
+    <Content Include="Library\Css\Common.css" />
+    <Content Include="Library\Js\Admin\Branch\control.js" />
+    <Content Include="Library\Js\Admin\Branch\index.js" />
     <Content Include="Library\Js\Common\Utility.js" />
     <Content Include="Library\Layout\Adm\bootstrap\css\bootstrap.css" />
     <Content Include="Library\Layout\Adm\bootstrap\css\bootstrap.min.css" />
@@ -2213,6 +2216,9 @@
     <Content Include="Areas\Admin\Views\Branch\Index.cshtml" />
     <Content Include="Areas\Admin\Views\Branch\Update.cshtml" />
     <Content Include="Areas\Admin\Views\Branch\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\Account\ChangePassword.cshtml" />
+    <Content Include="Areas\Admin\Views\Account\CreateAccount.cshtml" />
+    <Content Include="Areas\Admin\Views\Account\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -2223,9 +2229,8 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Admin\Models\" />
-    <Folder Include="Areas\Admin\Views\Account\" />
     <Folder Include="Areas\Admin\Views\Department\" />
-    <Folder Include="Library\Css\" />
+    <Folder Include="Library\Js\ValidateForm\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>

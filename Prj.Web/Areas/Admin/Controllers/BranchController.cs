@@ -17,10 +17,6 @@ namespace Prj.Web.Areas.Admin.Controllers
             _branchService = branchService;        
         }
         // GET: Admin/Branch
-        public ActionResult Index()
-        {
-            return View();
-        }
 
         public ActionResult Index(int? Page)
         {
@@ -46,8 +42,8 @@ namespace Prj.Web.Areas.Admin.Controllers
             }
             #endregion
 
-            ViewBag.listBranch = list.List;
-            return View();
+            ViewBag.Count = list.Count;
+            return View(list.List);
         }
         [HttpPost]
         [ValidateInput(false)]

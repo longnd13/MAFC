@@ -50,7 +50,7 @@ namespace Prj.Respositories.Implementations
             }
             catch (Exception ex)
             {
-                Logger.ErrorLog(ConstantsHandler.ForderLogName.RepoBranch, "Branch_GetAll : ", ex.ToString());
+                Logger.ErrorLog(ConstantsHandler.ForderLogName.RepoBranch, "GetAll : ", ex.ToString());
             }
             return list;
         }
@@ -92,36 +92,41 @@ namespace Prj.Respositories.Implementations
         }
         public MessageEntity Create(BranchEntity entity)
         {
-            var msg = new MessageEntity();
+            var msgEntity = new MessageEntity();
             try
             {
                 using (var _uow = _unitOfWorkProvider.GetUnitOfWork())
                 {
                     int Id = Protector.Int(_uow.Db.Insert(entity));
                     if (Id > 0)
-                    {                      
-                        msg.result = true;
-                        msg.message = ConstantsHandler.ErrorMessage.Message_OK;
+                    {
+                        msgEntity.code = 0;
+                        msgEntity.result = true;
+                        msgEntity.message = ConstantsHandler.ErrorMessage.Message_OK;
+                       
                         _uow.Commit();
                     }
                     else
                     {
-                        msg.result = false;
-                        msg.message = ConstantsHandler.ErrorMessage.Message_ERR;
+                        msgEntity.code = -2;
+                        msgEntity.result = false;
+                        msgEntity.message = ConstantsHandler.ErrorMessage.Message_ERR;
+
                     }
                 }
             }
             catch (Exception ex)
             {
-                msg.result = false;
-                msg.message = ConstantsHandler.ErrorMessage.Message_EX;
+                msgEntity.code = -1;
+                msgEntity.result = false;
+                msgEntity.message = ConstantsHandler.ErrorMessage.Message_EX;
                 Logger.ErrorLog(ConstantsHandler.ForderLogName.RepoBranch, "Create : ", ex.ToString());
             }
-            return msg;
+            return msgEntity;
         }
         public MessageEntity Update(BranchEntity entity)
         {
-            var msg = new MessageEntity();
+            var msgEntity = new MessageEntity();
             try
             {
                 using (var _uow = _unitOfWorkProvider.GetUnitOfWork())
@@ -132,21 +137,47 @@ namespace Prj.Respositories.Implementations
                         entity.CreatedBy = data.CreatedBy;
                         entity.CreatedDate = data.CreatedDate;
                         _uow.Db.Update(entity);
-                        msg.message = ConstantsHandler.ErrorMessage.Message_OK;
-                        msg.result = true;
-                        msg.code = 0;
+                        msgEntity.message = ConstantsHandler.ErrorMessage.Message_OK;
+                        msgEntity.result = true;
+                        msgEntity.code = 0;
                     }
                     _uow.Commit();
                 }
             }
             catch (Exception ex)
             {
-                msg.result = false;
-                msg.message = ConstantsHandler.ErrorMessage.Message_EX;
+                msgEntity.result = false;
+                msgEntity.message = ConstantsHandler.ErrorMessage.Message_EX;
                 Logger.ErrorLog(ConstantsHandler.ForderLogName.RepoBranch, "Update : ", ex.ToString());
             }
 
-            return msg;
+            return msgEntity;
+        }
+
+        public List<BranchEntity> GetBranch(bool bActived)
+        {
+            var list = new List<BranchEntity>();
+            try
+            {
+                using (var _uow = _unitOfWorkProvider.GetUnitOfWork())
+                {
+                    var query = PetaPoco.Sql.Builder.Append(@"SELECT Id, Name FROM Branch
+                                                              WHERE bDeleted=@0 AND bActived=@1", false, bActived);
+                    //if (cityId > 0)
+                    //{
+                    //    query.Append("AND CityId=@0", cityId);
+                    //}
+                    query.Append("ORDER BY ModifiedDate DESC");
+                    list = _uow.Db.Fetch<BranchEntity>(query);
+                    _uow.Commit();
+                }
+            }
+            catch (Exception ex)
+            {
+                Logger.ErrorLog(ConstantsHandler.ForderLogName.RepoBranch, "GetBranch : ", ex.ToString());
+            }
+
+            return list;
         }
     }
 }

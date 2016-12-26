@@ -2,6 +2,7 @@
 function goBack() {
     window.history.back();
 }
+
 //////-------------Dialog--------------------
 /////------typesize 1: small size, 2 medium size, 3 large size-------------- 
 function DialogConfirm(message, typesize, func_calback) {

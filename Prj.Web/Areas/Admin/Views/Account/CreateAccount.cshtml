@@ -1,0 +1,139 @@
+﻿@using Prj.BusinessLogic.Models;
+@model Prj.BusinessLogic.Models.AccountModel
+@{
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+   List<BranchModel> listBranch = ViewBag.listBranch;
+}
+
+<section class="content-header">
+    <h1>
+        CREATE ACCOUNT
+    </h1>
+    <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i>DashBoard</a></li>
+        <li class="active">Create Account</li>
+    </ol>
+</section>
+<section class="content">
+    @using (Html.BeginForm("CreateAccount", "Account", FormMethod.Post, new { role = "form" }))
+    {
+        <div class="row">
+            <!-- left column -->
+            <div class="col-md-12">
+                <!-- general form elements -->
+                <div class="box box-primary">
+                    <!-- /.box-header -->
+                    <!-- form start -->
+                    <div class="box-body">  
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                @Html.Raw(ViewBag.message)
+                            </div>
+                            <div class="form-group">
+                                <label>Branch</label>
+                                @{
+                                    var dataBranch = new List<SelectListItem>();
+                                    foreach (var item in listBranch)
+                                    {
+                                        dataBranch.Add(new SelectListItem { Text = item.Name, Value = item.Id.ToString() });
+                                    }
+                                    dataBranch.Insert(0, new SelectListItem { Text = "- Choose Branch -", Value = "0" });
+                                }
+                                @Html.DropDownListFor(model => model.BranchId, new SelectList(dataBranch, "Value", "Text"), new { @class = "form-control" })
+                                @*@Html.DropDownList("groupId", new SelectList(data, "Value", "Text"), new { @class = "form-control" })*@
+                            </div>
+
+                            <div class="form-group">
+                                <label>Department</label>
+                                @{
+                                    var dataDepartment = new List<SelectListItem>();
+
+                                    dataDepartment.Insert(0, new SelectListItem { Text = "- Choose Department -", Value = "0" });
+                                }
+                                @Html.DropDownListFor(model => model.DepartmentId, new SelectList(dataDepartment, "Value", "Text"), new { @class = "form-control" })
+                                @*@Html.DropDownList("groupId", new SelectList(data, "Value", "Text"), new { @class = "form-control" })*@
+                            </div>
+                            <div class="form-group">
+                                <label>UserName</label>
+                                @Html.TextBoxFor(model => model.UserName, new { @class = "form-control", maxlength = 50, placeholder = "Input UserName.", autocomplete = "off" })
+                                @Html.ValidationMessageFor(m => m.UserName, null, new { @class = "star-required" })
+                            </div>
+                            <div class="form-group">
+                                <label>Password</label>
+                                @Html.TextBoxFor(model => model.Password, new { @class = "form-control", type = "password", maxlength = 150, placeholder = "Input Password", autocomplete = "off" })
+                                @Html.ValidationMessageFor(m => m.Password, null, new { @class = "star-required" })
+                            </div>
+                            <div class="form-group">
+                                <label>Full Name</label>
+                                @Html.TextBoxFor(model => model.FullName, new { @class = "form-control", maxlength = 250, placeholder = "Input FullName" })
+                                @Html.ValidationMessageFor(m => m.FullName, null, new { @class = "star-required" })
+                            </div>
+                            <div class="form-group">
+                                <label>Email</label>
+                                @Html.TextBoxFor(model => model.Email, new { @class = "form-control", maxlength = 250, placeholder = "Input Email" })
+                                @Html.ValidationMessageFor(m => m.Email, null, new { @class = "star-required" })
+                            </div>
+                            <div class="form-group">
+                                <label>Phone</label>
+                                @Html.TextBoxFor(model => model.Phone, new { @class = "form-control", maxlength = 250, placeholder = "Input Phone" })
+                                @Html.ValidationMessageFor(m => m.Phone, null, new { @class = "star-required" })
+                            </div>
+                            <div class="box-footer">
+                                <button type="submit" onclick="clearMessage()" class="btn btn-warning">Add</button>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                <!-- /.box -->
+            </div>
+            <!--/.col (left) -->
+        </div>   <!-- /.row -->
+                                }
+</section>
+
+<script type="text/javascript">
+
+    function clearMessage()
+    {
+        $("#alertmessage").html('');
+    }
+    $(document).ready(function () {
+        $("#UserName").focus();
+    });
+    $(document).ready(function () { $("input").attr("autocomplete", "off"); });
+
+    // requet ajax
+
+    $('#BranchId').change(function () {
+        var branchId = $('#BranchId').val();
+        var param = '';
+        $.ajax({
+            url: '/admin/department/getdepartment/?branchId=' + branchId,
+            dataType: "json",
+            type: "GET",
+            contentType: 'application/json; charset=utf-8',
+            async: true,
+            processData: false,
+            cache: false,
+            success: function (data) {
+
+                $("#DepartmentId").empty();
+                var $select = $('#DepartmentId');
+                $('<option>', {
+                    value: "0"
+                }).html("- Choose Department  -").appendTo($select);
+                $.each(data, function (i, state) {
+                    $('<option>', {
+                        value: state.Id
+                    }).html(state.Name).appendTo($select);
+                });
+            },
+            error: function (xhr) {
+                alert('Server error !');
+            }
+        });
+    });
+</script>
+
+
+
