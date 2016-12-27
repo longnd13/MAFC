@@ -1,0 +1,9 @@
+12/27/2016 3:18:00 PM : GetAll : , AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+ApplicationListEntity -> ApplicationListModel
+Prj.Respositories.Entity.ApplicationListEntity -> Prj.BusinessLogic.Models.ApplicationListModel
+   at lambda_method(Closure , ApplicationListEntity , ApplicationListModel , ResolutionContext )
+   at AutoMapper.Mapper.AutoMapper.IMapper.Map[TSource,TDestination](TSource source)
+   at AutoMapper.Mapper.Map[TSource,TDestination](TSource source)
+   at Prj.BusinessLogic.Implementations.ApplicationService.GetAll(ApplicationModel model, Int64 pageIndex, Int64 pageSize) in E:\MIRAE ASSET\Code\Web\MAFC\Prj.BusinessLogic\Implementations\ApplicationService.cs:line 30
