@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace Prj.BusinessLogic.Implementations
 {
-   public class FeatureService : IFeatureService
+   public class  FeatureService : IFeatureService
     {
         private readonly IFeatureRepository _featureRepository;
         public FeatureService(IFeatureRepository featureRepository)
