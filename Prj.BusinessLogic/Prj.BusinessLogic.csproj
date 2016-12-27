@@ -50,12 +50,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Implementations\AccountService.cs" />
+    <Compile Include="Implementations\ApplicationService.cs" />
     <Compile Include="Implementations\BranchService.cs" />
     <Compile Include="Implementations\DepartmentService.cs" />
     <Compile Include="Implementations\FeatureService.cs" />
     <Compile Include="Implementations\PermissionService.cs" />
     <Compile Include="Implementations\TestService.cs" />
     <Compile Include="Interfaces\IAccountService.cs" />
+    <Compile Include="Interfaces\IApplicationService.cs" />
     <Compile Include="Interfaces\IBranchService.cs" />
     <Compile Include="Interfaces\IDepartmentService.cs" />
     <Compile Include="Interfaces\IFeatureService.cs" />
@@ -63,6 +65,7 @@
     <Compile Include="Interfaces\ITestService.cs" />
     <Compile Include="MapperConfig\AutoMapperConfig.cs" />
     <Compile Include="Models\AccountModel.cs" />
+    <Compile Include="Models\ApplicationModel.cs" />
     <Compile Include="Models\BranchModel.cs" />
     <Compile Include="Models\CommonModel.cs" />
     <Compile Include="Models\DepartmentModel.cs" />
