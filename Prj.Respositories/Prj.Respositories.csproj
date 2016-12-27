@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Entity\AccountEntity.cs" />
+    <Compile Include="Entity\ApplicationEntity.cs" />
     <Compile Include="Entity\BranchEntity.cs" />
     <Compile Include="Entity\CommonEntity.cs" />
     <Compile Include="Entity\DepartmentEntity.cs" />
@@ -50,11 +51,13 @@
     <Compile Include="Entity\PermissionEntity.cs" />
     <Compile Include="Framework\PetaPoco.cs" />
     <Compile Include="Implementations\AccountRepository.cs" />
+    <Compile Include="Implementations\ApplicationRepository.cs" />
     <Compile Include="Implementations\BranchRepository.cs" />
     <Compile Include="Implementations\DepartmentRepository.cs" />
     <Compile Include="Implementations\PermissionRepository.cs" />
     <Compile Include="Implementations\TestRespository.cs" />
     <Compile Include="Interfaces\IAccountRepository.cs" />
+    <Compile Include="Interfaces\IApplicationRepository.cs" />
     <Compile Include="Interfaces\IBranchRepository.cs" />
     <Compile Include="Interfaces\IDepartmentRepository.cs" />
     <Compile Include="Interfaces\IPermissionRepository.cs" />

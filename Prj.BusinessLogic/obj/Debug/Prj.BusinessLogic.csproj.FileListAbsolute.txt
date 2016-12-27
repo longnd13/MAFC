@@ -1,0 +1,15 @@
+D:\cshap project\ASP\MAFC\Prj.BusinessLogic\bin\Debug\Prj.BusinessLogic.dll
+D:\cshap project\ASP\MAFC\Prj.BusinessLogic\bin\Debug\Prj.BusinessLogic.pdb
+D:\cshap project\ASP\MAFC\Prj.BusinessLogic\bin\Debug\AutoMapper.dll
+D:\cshap project\ASP\MAFC\Prj.BusinessLogic\bin\Debug\Ninject.dll
+D:\cshap project\ASP\MAFC\Prj.BusinessLogic\bin\Debug\Prj.Respositories.dll
+D:\cshap project\ASP\MAFC\Prj.BusinessLogic\bin\Debug\Prj.Utilities.dll
+D:\cshap project\ASP\MAFC\Prj.BusinessLogic\bin\Debug\Newtonsoft.Json.dll
+D:\cshap project\ASP\MAFC\Prj.BusinessLogic\bin\Debug\Prj.Respositories.pdb
+D:\cshap project\ASP\MAFC\Prj.BusinessLogic\bin\Debug\Prj.Utilities.pdb
+D:\cshap project\ASP\MAFC\Prj.BusinessLogic\bin\Debug\AutoMapper.xml
+D:\cshap project\ASP\MAFC\Prj.BusinessLogic\bin\Debug\Ninject.xml
+D:\cshap project\ASP\MAFC\Prj.BusinessLogic\bin\Debug\Newtonsoft.Json.xml
+D:\cshap project\ASP\MAFC\Prj.BusinessLogic\obj\Debug\Prj.BusinessLogic.csprojResolveAssemblyReference.cache
+D:\cshap project\ASP\MAFC\Prj.BusinessLogic\obj\Debug\Prj.BusinessLogic.dll
+D:\cshap project\ASP\MAFC\Prj.BusinessLogic\obj\Debug\Prj.BusinessLogic.pdb
