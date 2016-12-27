@@ -29,6 +29,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup />
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.configuration" />
@@ -46,14 +47,17 @@
     <Compile Include="Entity\CommonEntity.cs" />
     <Compile Include="Entity\DepartmentEntity.cs" />
     <Compile Include="Entity\MessageEntity.cs" />
+    <Compile Include="Entity\PermissionEntity.cs" />
     <Compile Include="Framework\PetaPoco.cs" />
     <Compile Include="Implementations\AccountRepository.cs" />
     <Compile Include="Implementations\BranchRepository.cs" />
     <Compile Include="Implementations\DepartmentRepository.cs" />
+    <Compile Include="Implementations\PermissionRepository.cs" />
     <Compile Include="Implementations\TestRespository.cs" />
     <Compile Include="Interfaces\IAccountRepository.cs" />
     <Compile Include="Interfaces\IBranchRepository.cs" />
     <Compile Include="Interfaces\IDepartmentRepository.cs" />
+    <Compile Include="Interfaces\IPermissionRepository.cs" />
     <Compile Include="Interfaces\ITestRespository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UnitOfWork\IUnitOfWork.cs" />

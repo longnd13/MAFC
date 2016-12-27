@@ -9,10 +9,11 @@ using System.Web.Mvc;
 
 namespace Prj.Web.Areas.Admin.Controllers
 {
+    [Authorize]
     public class BranchController : BaseController
     {
         IBranchService _branchService;
-        public BranchController(IBranchService branchService)
+        public BranchController(IBranchService branchService, IAccountService accountService, IPermissionService permissionService) : base(accountService, permissionService)
         {
             _branchService = branchService;        
         }

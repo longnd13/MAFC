@@ -33,7 +33,10 @@ namespace Prj.BusinessLogic.MapperConfig
                 .ForMember(dest => dest.PassOld, opt => opt.MapFrom(src => Globals.GetMD5FromString(src.UserName + src.PassOld).ToLower()))
                 .ForMember(dest => dest.PassNew, opt => opt.MapFrom(src => Globals.GetMD5FromString(src.UserName + src.PassNew).ToLower()));
 
-                
+                // Permission
+                cfg.CreateMap<PermissionEntity, PermissionModel>();
+                cfg.CreateMap<PermissionModel, PermissionEntity>();
+
                 // Mapper Branch
                 cfg.CreateMap<BranchEntity, BranchModel>();
                 cfg.CreateMap<BranchModel, BranchEntity>();

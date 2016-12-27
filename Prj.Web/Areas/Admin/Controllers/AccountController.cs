@@ -8,14 +8,14 @@ using System.Web.Mvc;
 using Prj.Utilities;
 namespace Prj.Web.Areas.Admin.Controllers
 {
+    [Authorize]
     public class AccountController : BaseController
     {
         IBranchService _branchService;
-        IAccountService _accountService;
-        public AccountController(IBranchService branchService, IAccountService accountService)
+      
+        public AccountController(IBranchService branchService, IAccountService accountService, IPermissionService permissionService) : base(accountService, permissionService)
         {
             _branchService = branchService;
-            _accountService = accountService;
         }
         // GET: Admin/Account
         public ActionResult Index()

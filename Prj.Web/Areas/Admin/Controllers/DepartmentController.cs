@@ -7,10 +7,11 @@ using System.Web.Mvc;
 
 namespace Prj.Web.Areas.Admin.Controllers
 {
+    [Authorize]
     public class DepartmentController : BaseController
     {
         IDepartmentService _departmentService;
-        public DepartmentController(IDepartmentService departmentService)
+        public DepartmentController(IDepartmentService departmentService, IAccountService accountService, IPermissionService permissionService): base(accountService, permissionService)
         {
             _departmentService = departmentService;
         }
