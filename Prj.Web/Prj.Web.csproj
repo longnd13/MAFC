@@ -2227,6 +2227,11 @@
     <Content Include="Areas\Admin\Views\Authen\LogIn.cshtml" />
     <Content Include="Areas\Admin\Views\DashBoard\Index.cshtml" />
     <Content Include="Areas\Admin\Views\Application\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Feature\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Feature\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\Feature\Update.cshtml" />
+    <Content Include="Areas\Admin\Views\GroupPage\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\GroupPage\Update.cshtml" />
     <None Include="Properties\PublishProfiles\AccountManager.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -2239,8 +2244,6 @@
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Admin\Models\" />
     <Folder Include="Areas\Admin\Views\Department\" />
-    <Folder Include="Areas\Admin\Views\Feature\" />
-    <Folder Include="Areas\Admin\Views\GroupPage\" />
     <Folder Include="Library\Js\ValidateForm\" />
     <Folder Include="Models\" />
   </ItemGroup>

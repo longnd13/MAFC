@@ -1,0 +1,79 @@
+﻿@model   IEnumerable<Prj.BusinessLogic.Models.FeatureModel>
+@using Prj.Utility.Common
+@{
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+
+<section class="content-header">
+    <h1>FEATURE LIST</h1>
+    <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i>DashBoard</a></li>
+        <li class="active">Feature List</li>
+    </ol>
+</section>
+<section class="content">
+    @using (Html.BeginForm())
+    {
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="box">
+                    <div class="box-header">
+                       
+                        <!-- /.box-header -->
+                        <div class="clearfix">
+                            <div class="panel panel-primary filterable form-group">
+                                <div class="panel-heading">
+                                    <button type="button" id="btnAdd" class="btn btn-warning">Thêm mới</button> <span style="float:right"> Tổng cộng : <span style="color:red;"> @ViewBag.Count </span>  dòng </span>
+                                </div>
+                                <table class="table table-bordered table-hover">
+                                    <thead>
+                                        <tr class="filters">
+                                            <th class="col-xs-1  text-center">STT</th>
+                                            <th class="col-xs-2 text-center">Name</th>
+                                            <th class="col-xs-2 text-center">Url</th>
+                                            <th class="col-xs-2 text-center">Control</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @{var countSTT = 0;}
+                                        @foreach (var item in Model)
+                                        {
+                                            countSTT++;
+                                            <tr>
+                                                <td class="text-center">@countSTT</td>                                            
+                                                <td>@item.Name</td>
+                                                <td>@item.Url   </td>
+                                                <td class="text-center">
+                                                    <a class="fa fa-fw fa-edit" href="/Admin/Feature/Update/@item.Id" title="Detail Branch"></a>
+                                                    <a class="fa fa-trash-o" href="#" onclick="DeleteRow('/Admin/Feature/Delete/' + @item.Id);" title="Delete"></a>
+                                                </td>
+                                            </tr>
+                                        }
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- /.box-body -->
+                        <div class="box-footer clearfix">
+                            @Html.Raw(ViewData["Page"])
+                        </div>
+                    </div>
+                    <!-- /.box -->
+                </div>
+            </div>
+        </div>
+                                            }
+</section>
+<script type="text/javascript">
+    $(document).ready(function () {
+        RedirectFromAdd('btnAdd', '/Admin/Feature/Create');
+    });
+    function DeleteRow(urlRequest)
+    {
+        DialogConfirm('Bạn có chắc muốn xóa ?', 1, function () {
+            DeleteRowAjax("GET", urlRequest, "/Admin/Feature/Index");
+        });
+    }
+</script>
