@@ -52,10 +52,16 @@ namespace Prj.Utilities
             public static string RepoApplication = "RepoApplication";
             public static string ServiceApplication = "ServiceApplication";
             public static string WebApplication = "WebApplication";
+
             // GroupPage
             public static string RepoGroupPage = "RepoGroupPage";
             public static string ServiceGroupPage = "ServiceGroupPage";
             public static string WebGroupPage = "WebGroupPage";
+
+            // Feature
+            public static string RepoFeature = "RepoFeature";
+            public static string ServiceFeature = "ServiceFeature";
+            public static string WebFeature = "WebFeature";
         }
     }
 }
