@@ -22,6 +22,7 @@ namespace Prj.BusinessLogic.ModuleConfig
             Bind<IAccountRepository>().To<AccountRepository>();
             Bind<IDepartmentRepository>().To<DepartmentRepository>();
             Bind<IPermissionRepository>().To<PermissionRepository>();
+            Bind<IApplicationRepository>().To<ApplicationRepository>();
 
         }
     }

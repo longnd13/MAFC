@@ -18,6 +18,7 @@ namespace Prj.BusinessLogic.ModuleConfig
             Bind<IAccountService>().To<AccountService>();
             Bind<IDepartmentService>().To<DepartmentService>();
             Bind<IPermissionService>().To<PermissionService>();
+            Bind<IApplicationService>().To<ApplicationService>();
 
         }
     }

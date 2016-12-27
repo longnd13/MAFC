@@ -142,25 +142,5 @@ namespace Prj.Web.Areas.Admin.Controllers
             return Json(msg, JsonRequestBehavior.AllowGet);
         }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        public ActionResult Index()
-        {
-            return View();
-        }
     }
 }

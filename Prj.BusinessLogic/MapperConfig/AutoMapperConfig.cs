@@ -46,7 +46,20 @@ namespace Prj.BusinessLogic.MapperConfig
                 // Mapper Department
                 cfg.CreateMap<DepartmentEntity, DepartmentModel>();
                 cfg.CreateMap<DepartmentModel, DepartmentEntity>();
-                
+
+                // Mapper Application
+                cfg.CreateMap<ApplicationEntity, ApplicationModel>();
+                cfg.CreateMap<ApplicationModel, ApplicationEntity>();
+
+
+                // Mapper Feature
+                cfg.CreateMap<FeatureEntity, FeatureModel>();
+                cfg.CreateMap<FeatureModel, FeatureEntity>();
+
+                // Mapper Department
+                cfg.CreateMap<GroupPageEntity, GroupPageModel>();
+                cfg.CreateMap<GroupPageModel, GroupPageEntity>();
+
             });
         }
     }
