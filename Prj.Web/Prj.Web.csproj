@@ -2069,6 +2069,8 @@
     <Compile Include="Areas\Admin\Controllers\BranchController.cs" />
     <Compile Include="Areas\Admin\Controllers\DashBoardController.cs" />
     <Compile Include="Areas\Admin\Controllers\DepartmentController.cs" />
+    <Compile Include="Areas\Admin\Controllers\FeatureController.cs" />
+    <Compile Include="Areas\Admin\Controllers\GroupPageController.cs" />
     <Compile Include="Areas\Admin\Controllers\TestController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
@@ -2237,6 +2239,8 @@
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Admin\Models\" />
     <Folder Include="Areas\Admin\Views\Department\" />
+    <Folder Include="Areas\Admin\Views\Feature\" />
+    <Folder Include="Areas\Admin\Views\GroupPage\" />
     <Folder Include="Library\Js\ValidateForm\" />
     <Folder Include="Models\" />
   </ItemGroup>
