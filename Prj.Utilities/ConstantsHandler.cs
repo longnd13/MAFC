@@ -47,6 +47,15 @@ namespace Prj.Utilities
             public static string RepoDepartment = "RepoDepartment";
             public static string ServiceDepartment = "ServiceDepartment";
             public static string WebDepartment  = "WebDepartment";
+
+            // Application
+            public static string RepoApplication = "RepoApplication";
+            public static string ServiceApplication = "ServiceApplication";
+            public static string WebApplication = "WebApplication";
+            // GroupPage
+            public static string RepoGroupPage = "RepoGroupPage";
+            public static string ServiceGroupPage = "ServiceGroupPage";
+            public static string WebGroupPage = "WebGroupPage";
         }
     }
 }
