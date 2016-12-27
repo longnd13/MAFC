@@ -1,0 +1,64 @@
+12/26/2016 4:58:44 PM : CreateAccount : , System.Data.SqlClient.SqlException (0x80131904): Cannot insert explicit value for identity column in table 'Account' when IDENTITY_INSERT is set to OFF.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at PetaPoco.Database.Insert(String tableName, String primaryKeyName, Boolean autoIncrement, Object poco) in E:\MIRAE ASSET\Code\Web\MAFC\Prj.Respositories\Framework\PetaPoco.cs:line 1339
+   at PetaPoco.Database.Insert(Object poco) in E:\MIRAE ASSET\Code\Web\MAFC\Prj.Respositories\Framework\PetaPoco.cs:line 1347
+   at Prj.Respositories.Implementations.AccountRepository.CreateAccount(AccountEntity entity) in E:\MIRAE ASSET\Code\Web\MAFC\Prj.Respositories\Implementations\AccountRepository.cs:line 155
+ClientConnectionId:d63ab82f-bbd3-49f6-a8ef-77e37fc69626
+Error Number:544,State:1,Class:16
+12/26/2016 5:04:08 PM : CreateAccount : , System.Data.SqlClient.SqlException (0x80131904): Cannot insert explicit value for identity column in table 'Account' when IDENTITY_INSERT is set to OFF.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at PetaPoco.Database.Insert(String tableName, String primaryKeyName, Boolean autoIncrement, Object poco) in E:\MIRAE ASSET\Code\Web\MAFC\Prj.Respositories\Framework\PetaPoco.cs:line 1339
+   at PetaPoco.Database.Insert(Object poco) in E:\MIRAE ASSET\Code\Web\MAFC\Prj.Respositories\Framework\PetaPoco.cs:line 1347
+   at Prj.Respositories.Implementations.AccountRepository.CreateAccount(AccountEntity entity) in E:\MIRAE ASSET\Code\Web\MAFC\Prj.Respositories\Implementations\AccountRepository.cs:line 155
+ClientConnectionId:34507039-dfbc-4e6e-ab87-ccdb2c001441
+Error Number:544,State:1,Class:16
+12/26/2016 5:08:36 PM : CreateAccount : , System.Data.SqlClient.SqlException (0x80131904): Cannot insert explicit value for identity column in table 'Account' when IDENTITY_INSERT is set to OFF.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at PetaPoco.Database.Insert(String tableName, String primaryKeyName, Boolean autoIncrement, Object poco) in E:\MIRAE ASSET\Code\Web\MAFC\Prj.Respositories\Framework\PetaPoco.cs:line 1339
+   at PetaPoco.Database.Insert(Object poco) in E:\MIRAE ASSET\Code\Web\MAFC\Prj.Respositories\Framework\PetaPoco.cs:line 1347
+   at Prj.Respositories.Implementations.AccountRepository.CreateAccount(AccountEntity entity) in E:\MIRAE ASSET\Code\Web\MAFC\Prj.Respositories\Implementations\AccountRepository.cs:line 155
+ClientConnectionId:fdbe462e-5c9f-41b2-a3aa-abf4106f733f
+Error Number:544,State:1,Class:16
+12/26/2016 5:10:59 PM : CreateAccount : , System.Data.SqlClient.SqlException (0x80131904): Cannot insert explicit value for identity column in table 'Account' when IDENTITY_INSERT is set to OFF.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at PetaPoco.Database.Insert(String tableName, String primaryKeyName, Boolean autoIncrement, Object poco) in E:\MIRAE ASSET\Code\Web\MAFC\Prj.Respositories\Framework\PetaPoco.cs:line 1339
+   at PetaPoco.Database.Insert(Object poco) in E:\MIRAE ASSET\Code\Web\MAFC\Prj.Respositories\Framework\PetaPoco.cs:line 1347
+   at Prj.Respositories.Implementations.AccountRepository.CreateAccount(AccountEntity entity) in E:\MIRAE ASSET\Code\Web\MAFC\Prj.Respositories\Implementations\AccountRepository.cs:line 155
+ClientConnectionId:c1c4270a-dd68-433e-83ef-c0a6dc8d56ce
+Error Number:544,State:1,Class:16

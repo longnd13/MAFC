@@ -1,0 +1,15 @@
+E:\MIRAE ASSET\Code\Web\MAFC\Prj.BusinessLogic\bin\Debug\Prj.BusinessLogic.dll
+E:\MIRAE ASSET\Code\Web\MAFC\Prj.BusinessLogic\bin\Debug\Prj.BusinessLogic.pdb
+E:\MIRAE ASSET\Code\Web\MAFC\Prj.BusinessLogic\bin\Debug\AutoMapper.dll
+E:\MIRAE ASSET\Code\Web\MAFC\Prj.BusinessLogic\bin\Debug\Ninject.dll
+E:\MIRAE ASSET\Code\Web\MAFC\Prj.BusinessLogic\bin\Debug\AutoMapper.xml
+E:\MIRAE ASSET\Code\Web\MAFC\Prj.BusinessLogic\bin\Debug\Ninject.xml
+E:\MIRAE ASSET\Code\Web\MAFC\Prj.BusinessLogic\obj\Debug\Prj.BusinessLogic.csprojResolveAssemblyReference.cache
+E:\MIRAE ASSET\Code\Web\MAFC\Prj.BusinessLogic\obj\Debug\Prj.BusinessLogic.dll
+E:\MIRAE ASSET\Code\Web\MAFC\Prj.BusinessLogic\obj\Debug\Prj.BusinessLogic.pdb
+E:\MIRAE ASSET\Code\Web\MAFC\Prj.BusinessLogic\bin\Debug\Prj.Respositories.dll
+E:\MIRAE ASSET\Code\Web\MAFC\Prj.BusinessLogic\bin\Debug\Prj.Utilities.dll
+E:\MIRAE ASSET\Code\Web\MAFC\Prj.BusinessLogic\bin\Debug\Newtonsoft.Json.dll
+E:\MIRAE ASSET\Code\Web\MAFC\Prj.BusinessLogic\bin\Debug\Prj.Respositories.pdb
+E:\MIRAE ASSET\Code\Web\MAFC\Prj.BusinessLogic\bin\Debug\Prj.Utilities.pdb
+E:\MIRAE ASSET\Code\Web\MAFC\Prj.BusinessLogic\bin\Debug\Newtonsoft.Json.xml

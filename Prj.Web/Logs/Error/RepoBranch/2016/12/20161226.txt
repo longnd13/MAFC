@@ -1,0 +1,17 @@
+12/26/2016 10:27:03 AM : Create : , System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Descrition'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at PetaPoco.Database.Insert(String tableName, String primaryKeyName, Boolean autoIncrement, Object poco) in E:\MIRAE ASSET\Code\Web\MAFC\Prj.Respositories\Framework\PetaPoco.cs:line 1339
+   at PetaPoco.Database.Insert(Object poco) in E:\MIRAE ASSET\Code\Web\MAFC\Prj.Respositories\Framework\PetaPoco.cs:line 1347
+   at Prj.Respositories.Implementations.BranchRepository.Create(BranchEntity entity) in E:\MIRAE ASSET\Code\Web\MAFC\Prj.Respositories\Implementations\BranchRepository.cs:line 100
+ClientConnectionId:79ad444d-7d63-4a4b-b35d-5d4a666c39e2
+Error Number:207,State:1,Class:16

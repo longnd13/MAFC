@@ -1,0 +1,72 @@
+﻿@model Prj.BusinessLogic.Models.BranchModel
+@{
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<section class="content-header">
+    <h1>
+       BRANCH CREATE
+    </h1>
+    <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i>DashBoard</a></li>
+        <li class="active">Branch Create</li>
+    </ol>
+</section>
+
+<section class="content">
+
+    @using (Html.BeginForm("Create", "Branch", FormMethod.Post, new { enctype = "multipart/form-data", id = "form" }))
+    {
+        <div class="row">
+            <div class="col-md-12">
+                <!-- general form elements -->
+                <div class="box box-primary">
+                    <!-- /.box-header -->
+                    <!-- form start -->
+                    <div class="box-body">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for=""></label>
+                                @Html.Raw(ViewBag.message)
+                            </div>
+                            <div class="form-group">
+                                <label>Branch Name <span class="star-required">*</span></label>
+                                @Html.TextBoxFor(model => model.Name, new { @class = "form-control", maxlength = 250, placeholder = "Input Branch Name" })
+                                @Html.ValidationMessageFor(m => m.Name, null, new { @class = "star-required" })
+                            </div>
+                            <div class="form-group">
+                                <label>Address <span class="star-required">*</span></label>
+                                @Html.TextBoxFor(model => model.Address, new { @class = "form-control", maxlength = 550, placeholder = "Input Branch Addres" })
+                                @Html.ValidationMessageFor(m => m.Address, null, new { @class = "star-required" })
+                            </div>
+
+                            <div class="form-group">
+                                <label>Description</label>
+                                @Html.TextBoxFor(model => model.Description, new { @class = "form-control", maxlength = 150, placeholder = "Input Description" })
+                                @Html.ValidationMessageFor(m => m.Description, null, new { @class = "star-required" })
+                            </div>
+                            <div class="form-group">
+                                <div style="margin-left:20px;" class="checkbox">
+                                    <label>
+                                        @Html.CheckBoxFor(model => model.bActived) Hiển thị 
+                                    </label>
+                                </div>
+                            </div>
+                          
+                            <div class="box-footer">
+                                <button type="submit" class="btn btn-warning">Add</button> &nbsp;&nbsp;
+                                <button id="btnGoBack" type="button" class="btn btn-primary">Go back</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- /.box -->
+            </div>
+
+        </div>
+
+                                    }
+</section>
+<script type="text/javascript"> 
+</script>

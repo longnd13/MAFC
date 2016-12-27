@@ -1,0 +1,9 @@
+E:\MIRAE ASSET\Code\Web\MAFC\Prj.Respositories\bin\Release\Prj.Respositories.dll
+E:\MIRAE ASSET\Code\Web\MAFC\Prj.Respositories\bin\Release\Prj.Respositories.pdb
+E:\MIRAE ASSET\Code\Web\MAFC\Prj.Respositories\bin\Release\Prj.Utilities.dll
+E:\MIRAE ASSET\Code\Web\MAFC\Prj.Respositories\bin\Release\Newtonsoft.Json.dll
+E:\MIRAE ASSET\Code\Web\MAFC\Prj.Respositories\bin\Release\Prj.Utilities.pdb
+E:\MIRAE ASSET\Code\Web\MAFC\Prj.Respositories\bin\Release\Newtonsoft.Json.xml
+E:\MIRAE ASSET\Code\Web\MAFC\Prj.Respositories\obj\Release\Prj.Respositories.csprojResolveAssemblyReference.cache
+E:\MIRAE ASSET\Code\Web\MAFC\Prj.Respositories\obj\Release\Prj.Respositories.dll
+E:\MIRAE ASSET\Code\Web\MAFC\Prj.Respositories\obj\Release\Prj.Respositories.pdb
